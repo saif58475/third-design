@@ -1,0 +1,302 @@
+:root{
+	background-color:white ;
+	box-sizing: border-box;
+}
+ /*-----------------------------------------------------------------------------------------------------------------------------*/
+                                           /* THE NAVBAR CODE */
+
+
+.navbar-container{
+	display: flex;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.navbar-container img{
+    margin: 15px 60px;
+    max-width: 100px;
+    max-height: 42px;
+    flex: 1;
+}
+.navbar-container ul[class="navbar-list"]{
+display: flex;
+flex-flow: row;
+list-style-type: none;
+margin-left: -60px;
+flex: 5;
+}
+
+.navbar-container .navbar-list .link-item{
+	margin: 15px  20px 0px;
+
+
+}
+.icons{
+	display: flex;
+	list-style-type: none;
+	margin-left: 65px;
+}
+.icons li{
+	margin: 1px 19px 0px -91px;
+	padding: 0px;	
+}
+
+.navbar-container .navbar-list .link-item:hover{
+	border: 0.2px solid rosybrown;
+	transform: 0.3s;
+	padding: 7px;
+}
+
+.navbar-container .navbar-list li a{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-family:  "Courier New", monospace;
+}
+					  /* ul[class="icons-navbar"]{
+					display: flex;
+					list-style-type: none;
+						}
+					  .navbar-container .icon-navbar li {
+							display: flex;
+							flex: 0;
+							margin-left: 0;
+							
+						} */
+.drop-holder{
+	position: relative;
+   
+}
+.drop-down-table {
+		border: 0.1em solid rosybrown;
+			position: absolute;
+			top: 115%;
+			left: 30px;
+		width: 450px;
+		height: 200px;
+		transform: scale(0);
+		visibility: hidden;
+		background-color: white;
+
+	}
+.drop-holder:hover .drop-down-table{
+    transform: scale(1);
+    visibility: visible;
+    transform: visibility 0.5s;
+
+}	
+.drop-down-table a , .drop-down-table th {
+	text-decoration: none;
+	color: black;
+	font-family:'Brush Script MT', cursive;;
+}
+ .drop-down-table	td:hover{
+ 	border: 0.1em solid rosybrown;
+ 	border-radius: 40px;
+ }
+.drop-down-table th , .drop-down-table	td {
+	padding: 0px 20px 0px 20px;
+}
+.plastic-table{
+	width: auto;
+}              
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+                                              /*the social media list*/
+
+.social{
+	display: block;
+	width: 15px;
+	height: 30px;
+	position: absolute;
+	top: 35%;
+	margin: 0px 0px 0px -30px;
+}
+.social .unordered-social-media{
+	list-style-type: none;
+
+}
+.social .unordered-social-media li{
+	margin-bottom: 20px;
+}
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+ 							/* THE SLIDER */
+
+.backpic {
+ 		width: 80%;
+ 		margin: auto;
+ 		height: 60%;
+ 		position: absolute;
+ 		top: 15%;
+ 		left: 10%;
+       z-index: -1;
+ 	}						
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+ 	                                        /* The chairs section */
+.chairs-section-container{
+	position: absolute;
+	top: 90%;
+	left: 5%;
+}
+.chairs-section-container .second-section-title{
+	font-size: 2em;
+	font-family:  "Courier New", monospace;
+	margin-bottom: 0px;
+	margin-left: 30%;
+	letter-spacing: 10px;
+} 	          
+
+.chairs-section-container .Chairs-container{
+	display: flex;
+	margin: 80px 20px 20px 20px;
+}
+
+.chairs-section-container .Chairs-container .item{
+	width: 250px;
+	height: 400px;
+	overflow: hidden;
+   font-size: 1.5em;
+   font-weight: bold;
+	margin: 10px 40px 20px 20px;
+
+}
+.chairs-section-container .Chairs-container .item .details{
+	transform: scale(0);
+    font-family: "Courier New", monospace; 
+    font-size: 1.5rem;
+    color: #809BA2;
+    margin-left: 5px;
+}
+.chairs-section-container .Chairs-container .item:hover{
+	cursor: pointer;
+	background-color: #F3E9C3;
+	transform: scale(1.02);
+	transition: transform 1s;
+}
+.chairs-section-container .Chairs-container .item:hover .details{
+	transform: scale(1);
+
+}
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+                                   /* the first grid container */
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 20% 20% 30% 20%;
+	grid-gap: 20px;
+	margin-left: 30px;
+	position: relative;
+	margin-bottom: 30px;
+}          
+
+.grid-container .grid-mem{
+	background-color: #DADBC8;
+	height: 300px;
+}  
+.grid-container .one{
+	background-image: url(images/pexels-photo-1229861.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+.grid-container  .three{
+	background-image: url("images/cms-banner-1.jpg");
+	background-repeat: no-repeat;
+	position: center;
+	background-size: 100% 100%;
+} 
+.grid-container  .grid-mem:hover{
+	transition: transform 0.2s;
+	transform: scale(1.03);
+}
+.grid-container .four{
+	background-image: url("images/cms-banner-2.jpg");
+	background-repeat: no-repeat;
+	position: center;
+	background-size: 100% 100%;
+}
+.grid-container .five{
+	background-image: url("images/banner.png");
+	background-repeat: no-repeat;
+	position: center;
+	background-size: 100% 100%;
+}
+.grid-container .six{
+	background-image: url("images/category-banner2.jpg");
+	background-repeat: no-repeat;
+	position: center;
+	background-size: 100% 100%;
+}
+.grid-container .seven{
+	background-image: url("images/SKINNY_FAT_SOFA_WITH_CHAISE_45_1.RGB_color_.RGB_color_1200x.jpg");
+	background-repeat: no-repeat;
+	position: center;
+	background-size: 100% 100%;
+}
+.grid-container .eight{
+	background-image: url("images/chair1.jpg");
+	background-repeat: no-repeat;
+	position: center;
+	background-size: 100% 100%;
+}
+.grid-container .one{
+       grid-column-start: 1;
+       grid-column-end: 3;
+       font-weight: bold;
+}
+.grid-container .one:hover{
+	color: red;
+}
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+
+                               /* the over window */
+
+ .over{
+ 	height: 300px;
+ 	width: 520px;
+ 	background-color: grey;
+ 	opacity: 0.6;
+ 	position: absolute;
+ }                              
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+
+                 /* gri2 container style */
+
+  .grid2-container{
+   display: grid;
+   position: absolute;
+   grid-template-columns: repeat(6, 1fr);
+   grid-gap: 70px;
+   top: 104%;
+   left: 5%;
+  }               
+  .grid2-container .grid2-item{
+  	width: 130px;
+  	height: 90px;
+     margin-bottom: 60px;
+     background-color: #F3E9C3;
+  }
+
+  /*------------------------------------------------------------------------------------------------------------------------*/
+
+  footer{
+  	width: 1350px;
+  	height: 10%;
+  	background-color: #ECE4C5;
+  	position: absolute;
+  	top: 120%;
+  	left: -70px;
+   
+  }
+  footer .footer-container{
+  	position: absolute;
+  	display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-gap: 30px;	
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+  }
+
